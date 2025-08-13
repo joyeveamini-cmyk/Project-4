@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product landing Page</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  <style>
+    *,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1{
+   font-size:25; 
+   text-align:center; 
+   margin-top: 20px;
+}
+    #nav-bar {
+      display: flex;
+      justify-content: flex-end; /* Push to the right */
+      align-items: center;
+      background-color: white;
+      padding: 15px 30px;
+      position: fixed; /* Stick to the top */
+      top: 0;
+      left: 0;
+      right: 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    #nav-bar a {
+      margin-left: 10px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+#submit {
+  margin-top:30px;
+  font-family: Verdana;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color:light grey;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container{
+      display: flex;
+      justify-content: space-evenly; /* center the boxes */
+      gap: 5px; /* space between boxes */
+      flex-wrap: wrap; /* make responsive */
+     
+    }
+ .box {
+      background-color: rgb(247, 241, 241);
+      border: 1px solid #ccc;
+      padding: 20px;
+      width: 250px;
+      height: 350px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+      margin-top:50px;gap: 10px;
+
+    }
+.container-box{
+               background: white;
+               border: 1px solid #ddd;
+               padding: 20px;
+               width: 250px;             /* fixed width for side-by-side layout */
+               text-align: center;
+               border-radius: 10px;
+               
+}
+button {
+  margin-top:40px;
+  font-family: Verdana;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color:purple;
+  color: Black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#form{
+      display: flex;
+      justify-content:center; /* Push content to the right */
+      align-items: center;  
+    }
+ #form input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+  }
+body{
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     background-color: soft-gray;
+    }
+.form-container {
+                 margin-top: 30px;
+                 text-align: center;
+ }
+
+.form-container input {
+      display: block;
+      width: 250px;
+      margin: 10px auto;
+      padding: 10px;
+      font-size: 16px;
+}
+#section4{
+margin-top:50px;
+text-align:left 10px;
+margin-left:250px;
+}
+
+img{
+    height:400px;
+    width: 500px;
+    margin-left: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+p{
+  margin-top:5px;
+  align-items: align;
+}
+#video{
+       margin-left: 250px;
+       display: flex;
+       justify-content: center;
+}
+#footer,{
+         margin-left: 340px;
+         display: flex;
+}
+
+
+
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex; 
+  }
+}
+</style>
+</head>
+<body>
+<main>
+<header id="header">
+<img id="header-img" src="https://i.ibb.co/B5RGhVB7/IMG-20250726-WA0015.jpg">
+<nav id="nav-bar">
+<a  class="nav-link" href="#features">Features</a>
+<a class="nav-link" href="#classification">Classifications</a>
+<a class="nav-link" href="#pricing">Pricing</a>
+</nav>
+</header>
+<h1 style="margin-top:100px;">FOR THE LOVE OF HONEY</H1>
+<form id="form" action="https://www.freecodecamp.com/email-submit">
+<input id="email" placeholder="Enter your email" type="email" name="email">
+</form>
+<br>
+<form id="form" action="https://www.freecodecamp.com/email-submit">
+<input id="submit" type="submit" value="submit" onclick="windows.location .href='#honeyproducts'" style="display:block;margin:10px auto;">
+</form>
+<section id="features">
+<table  cellspacing=10 cellpadding=10>
+<div class="social-icons">
+<tr><div><th><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a><strong>Facebook</strong></th><td>Pure Gold in a jar - 100% natural honey</td></div></tr><br>
+<tr><div><th><a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a><strong>LinkedIn</strong></th><td><p>Our honey is 100% natural, rich in antioxidants, and known to boost immunity, soothe sore throats, and provide a natural energy boost</p></td></div></tr><br>
+<tr><div><th><a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a><strong>YouTube</strong></th><td><p>Each jar is tested for purity and traceability to ensure you get the highest-quality monofloral honey, free from additives and artificial ingredients.</p></td></tr>
+</div>
+</div>
+</table>
+</section>
+<section id="pricing">
+<iframe id="video" src="https://player.vimeo.com/video/1106929927" width="560" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen"></iframe> </section>
+</section>
+<section id="classification">
+<div class="container">
+<div class="box"><header><strong>Monofloral Honey</strong>
+<div></div>
+<p>Original Honey is a proudly local brand established in 2000, dedicated to producing pure, unblended monofloral honey straight from the hive to your home</p>
+</header>
+<p><strong>R80 - 100g</strong></p>
+<button onclick="windows.location.href='#select'">Section</button>
+</div>
+<div class="box"><header><strong>Polyfloral Honey</strong></header>
+<p>Polyfloral honey, made from the nectar of multiple florah types, is more widely available and therefore less costly.</p>
+<p><strong>60-100g</strong></p>
+<button onclick="windows.location.href='#select'">Section</button>
+</div>
+</div>
+</section>
+<section id="section4">
+<br><footer id="footer"><strong>Privary Terms Contact</strong>
+  <p>Copyrite 2000. Original Honey</p></footer>
+</section>
+</header>
+</main>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+    
